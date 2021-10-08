@@ -1,0 +1,41 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(119, 219, 65);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    list-style: none;
+    text-align: center;
+}
+
+body {
+    background: rgb(27, 27, 27);
+    font-family: JetBrains Mono, 'Regular', OpenType;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    padding: 35px;
+    background: rgb(22, 22, 22);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+li {
+    display: inline-block;
+    margin-right: 30px;
+}
