@@ -1,0 +1,47 @@
+<!--
+Created for Fr_g
+by Voizdev
+February 21, 2021
+
+The script will run on page load and pick a random integer from 0 to
+the the list size. It will then use that number to build a path to an
+image. Set the number of your list size. Set the correct path to the folder
+where the images are located. Name the images all the same thing except
+for an incrementing number at the end of the base filename proceeding
+the period (ex. frog23.jpg). Make sure all the file extensions are the same.
+Set the correct file extension.
+-->
+
+<!DOCTYPE html>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html"><i class="fas fa-address-card"></i> About</a></li>
+            <li><a href="projects.html"><i class="fas fa-box"></i> Projects</a></li>
+            <li><a href="fr0gware+.html"><i class="fas fa-frog"></i> Fr0gware+</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+</body>
+</html>
+<html>
+    <head>
+      <title>Fr0gware+</title>
+      <link rel="icon" type="image/png" href="/logo2.png" sizes="32x32"/>
+      <link rel="icon" type="image/png" href="/logo.png" sizes="16x16"/>
+      <link rel="stylesheet" href="../styles.css">
+      <script src="https://kit.fontawesome.com/e82875eea3.js" crossorigin="anonymous"></script>
+    </head>
+    <img id="frog" src="" alt=" :'( this frog was not found" title=":)">
+    <script>
+        window.onload = function randomFrog(){
+            var listSize = 130; 
+            var rInt = Math.floor(Math.random() * listSize + 1);
+            var str = "img/"; 
+            str = str.concat("frog"); 
+            str = str.concat(rInt);
+            str = str.concat(".png"); 
+            document.getElementById("frog").src = str;
+            document.getElementById("path").innerHTML = str;
+        }
+    </script>
+</html>
